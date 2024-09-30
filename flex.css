@@ -27,40 +27,78 @@
 /* We start writing our flexbox here. The above is just page setup */
 .flex-container {
   border:10px solid goldenrod;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 100vh;
 }
+/* where does order go */
 
 [class^="box"] {
-    
+    width: 30%;
 }
 
 .box1 {
-    
+  order: 0;
+  flex-grow: 1;
+  align-self: auto;
+  width: 50%;
 }
 
 .box2 {
-
+  order: 1;
+  flex-grow: 3;
+  flex-shrink: 0;
+  align-self: auto;
+  width: 33%;
 }
 .box3 {
-
+  order: -1;
+  flex-grow: 1;
+  align-self: auto;
+  width: 100%;
 }
 .box4 {
-
+  order: 0;
+  flex-grow: 1;
+  align-self: auto;
+  width: 50%;
 }
 .box5 {
-
+  order: 2;
+  flex-grow: 1;
+  align-self: auto;
+  width: 33%;
 }
 .box6 {
-
+  order: 0;
+  align-self: auto;
+  align-self: auto;
+  width: 25%;
 }
 .box7 {
-
+  order: 0;
+  flex-shrink: 0;
+  align-self: auto;
+  width: 25%;
 }
-.box8 {
 
+.box8 {
+  order: 0;
+  align-self: auto;
+  flex-grow: 0;
+  width: 25%;
 }
 .box9 {
-
+  order: 0;
+  align-self: auto;
+  flex-grow: 0;
+  width: 25%;
 }
 .box10 {
-
+  order: 0;
+  flex-grow: 1;
+  align-self: auto;
+  width: 33%;
 }
